@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.log
+.DS_Store
+.env
+.env.local
+keys/
+*.private.pem
+*.certification.txt
+.sowasit-cache/
