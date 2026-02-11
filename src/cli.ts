@@ -21,7 +21,7 @@ program
   .option('-o, --output <dir>', 'Output directory for keys', './keys')
   .option('-n, --name <name>', 'Key pair name', 'sowasit')
   .option('-p, --passphrase <passphrase>', 'Passphrase to encrypt private key (recommended)')
-  .option('--base-url <url>', 'SoWasIt API base URL', 'https://api.sowasit.com')
+  .option('--base-url <url>', 'SoWasIt API base URL', 'https://api.sowasit.io')
   .option('--client-name <name>', 'Your company name for certification')
   .option('--client-siret <siret>', 'Your company SIRET number')
   .option('--client-contact <contact>', 'Contact email for certification')
@@ -126,7 +126,7 @@ program
   .option('--content <json>', 'Block content as JSON string')
   .option('--content-file <path>', 'Path to JSON file containing block content')
   .option('-p, --passphrase <passphrase>', 'Passphrase for encrypted private key')
-  .option('--base-url <url>', 'SoWasIt API base URL', 'https://api.sowasit.com')
+  .option('--base-url <url>', 'SoWasIt API base URL', 'https://api.sowasit.io')
   .action(async (options) => {
     try {
       let content: any;

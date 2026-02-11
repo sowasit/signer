@@ -32,7 +32,7 @@ npm install @sowasit/signer
 
 ### 1. Generate and register a key pair
 
-First, get an enrollment token from your SoWasIt dashboard, then:
+As a partner, first get an enrollment token from the chain owner, then:
 
 ```bash
 signer add-key \
@@ -226,7 +226,7 @@ import fs from 'node:fs/promises';
 
 const client = new SoWasItClient({
   apiKey: 'sk_your_api_key',
-  baseUrl: 'https://api.sowasit.com' // Optional
+  baseUrl: 'https://api.sowasit.io' // Optional
 });
 
 const content = {
@@ -317,12 +317,12 @@ signer add-key --token xxx --api-key yyy
 
 ## Key Lifecycle
 
-1. **Generation**: Create a key pair with `signer add-key`
-2. **Registration**: Public key is registered with SoWasIt (status: `pending_certification`)
-3. **Certification**: Download, print, sign, and upload the certification document (status: `certification_sent`)
-4. **Verification**: SoWasIt team verifies your document (status: `verified`)
-5. **Activation**: Key is activated and can sign blocks (status: `active`)
-6. **Revocation** *(if needed)*: Key is revoked and cannot sign anymore (status: `revoked`)
+1. **Generation**: Partner creates a key pair with `signer add-key`
+2. **Registration**: Partner's public key is registered with SoWasIt (status: `pending_certification`)
+3. **Certification**: Partner downloads, prints, signs, and uploads the certification document (status: `certification_sent`)
+4. **Verification**: Chain owner verifies the partner's document (status: `verified`)
+5. **Activation**: Chain owner activates the key, partner can sign blocks (status: `active`)
+6. **Revocation** *(if needed)*: Chain owner revokes the key if compromised or obsolete (status: `revoked`)
 
 ## API Reference
 
@@ -388,7 +388,7 @@ Create a new SoWasIt API client.
 
 **Parameters:**
 - `options.apiKey` (string): Your SoWasIt API key
-- `options.baseUrl` (string, optional): API base URL (default: `'https://api.sowasit.com'`)
+- `options.baseUrl` (string, optional): API base URL (default: `'https://api.sowasit.io'`)
 
 #### `registerPublicKey(request): Promise<RegisterKeyResponse>`
 
@@ -442,10 +442,10 @@ MIT
 
 ## Support
 
-- **Documentation**: https://docs.sowasit.com
-- **Dashboard**: https://dashboard.sowasit.com
+- **Documentation**: https://docs.sowasit.io
+- **Dashboard**: https://dashboard.sowasit.io
 - **Issues**: https://github.com/sowasit/sowasit-signer/issues
-- **Email**: support@sowasit.com
+- **Email**: support@sowasit.io
 
 ## Contributing
 

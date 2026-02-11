@@ -49,7 +49,7 @@ export class SoWasItClient {
 
   constructor(options: SoWasItClientOptions) {
     this.apiKey = options.apiKey;
-    this.baseUrl = options.baseUrl || 'https://api.sowasit.com';
+    this.baseUrl = options.baseUrl || 'https://api.sowasit.io';
   }
 
   async registerPublicKey(request: RegisterKeyRequest): Promise<RegisterKeyResponse> {
