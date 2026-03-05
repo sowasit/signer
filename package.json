@@ -32,6 +32,12 @@
     "commander": "^11.1.0",
     "json-stringify-deterministic": "^1.0.12"
   },
+  "files": [
+    "dist",
+    "!dist/__tests__",
+    "README.md",
+    "LICENSE"
+  ],
   "devDependencies": {
     "@types/node": "^20.10.6",
     "@vitest/ui": "^1.0.4",
