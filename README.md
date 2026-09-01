@@ -442,8 +442,8 @@ MIT
 
 ## Support
 
-- **Documentation**: https://docs.sowasit.io
-- **Dashboard**: https://dashboard.sowasit.io
+- **Documentation**: https://sowasit.io/documentation
+- **Dashboard**: https://sowasit.io/dashboard
 - **Issues**: https://github.com/sowasit/sowasit-signer/issues
 - **Email**: support@sowasit.io
 
